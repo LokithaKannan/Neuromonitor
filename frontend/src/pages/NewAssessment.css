@@ -1,0 +1,116 @@
+/* ================================================================
+   New Assessment Page
+   ================================================================ */
+.assessment {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 40px 32px 64px;
+}
+
+/* Step indicator */
+.assessment__steps {
+  display: flex; align-items: center; justify-content: center;
+  gap: 24px; margin-bottom: 40px;
+}
+.assessment__step {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 0.875rem; font-weight: 500; color: var(--color-text-muted);
+}
+.assessment__step.active { color: var(--color-primary); }
+.assessment__step.done   { color: var(--color-success); }
+
+.assessment__step-dot {
+  width: 28px; height: 28px; border-radius: 50%;
+  border: 2px solid var(--color-border);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.75rem; font-weight: 700;
+  background: var(--color-surface); transition: all 0.2s;
+}
+.assessment__step.active .assessment__step-dot {
+  border-color: var(--color-primary); background: var(--color-primary); color: #fff;
+}
+.assessment__step.done .assessment__step-dot {
+  border-color: var(--color-success); background: var(--color-success-bg); color: var(--color-success);
+}
+
+/* Panel card */
+.assessment__body {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-xl);
+  padding: 40px 36px;
+  box-shadow: var(--shadow-md);
+}
+.assessment__panel { display: flex; flex-direction: column; gap: 20px; }
+.assessment__panel h2 {
+  font-size: 1.5rem; font-weight: 800; color: var(--color-text); letter-spacing: -0.02em;
+}
+.assessment__panel > p { font-size: 0.875rem; color: var(--color-text-muted); line-height: 1.65; }
+
+/* Options */
+.assessment__options { display: flex; flex-direction: column; gap: 12px; }
+.assessment__option {
+  display: flex; align-items: center; gap: 16px;
+  padding: 16px 20px; border: 1.5px solid var(--color-border-light);
+  border-radius: var(--radius-lg); background: var(--color-surface);
+  cursor: pointer; text-align: left; width: 100%; transition: all 0.15s;
+}
+.assessment__option:hover { border-color: rgba(74,25,66,0.3); background: rgba(74,25,66,0.02); }
+.assessment__option.selected {
+  border-color: var(--color-primary); background: rgba(74,25,66,0.04);
+  box-shadow: 0 0 0 3px rgba(74,25,66,0.07);
+}
+.assessment__option-icon { color: var(--color-primary); flex-shrink: 0; }
+.assessment__option-body { flex: 1; display: flex; flex-direction: column; gap: 2px; }
+.assessment__option-body strong { font-size: 1rem; font-weight: 600; color: var(--color-text); }
+.assessment__option-body span   { font-size: 0.75rem; color: var(--color-text-muted); }
+.assessment__option-check { color: var(--color-primary); flex-shrink: 0; }
+
+/* Prep list */
+.assessment__prep-list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+.assessment__prep-list li {
+  display: flex; align-items: flex-start; gap: 10px;
+  font-size: 0.875rem; color: var(--color-text-secondary); line-height: 1.6;
+}
+.assessment__prep-list li svg { color: var(--color-sage); flex-shrink: 0; margin-top: 2px; }
+
+/* Camera box */
+.assessment__camera-box {
+  width: 100%; aspect-ratio: 4/3; max-height: 340px;
+  background: var(--color-primary-dark); border-radius: var(--radius-lg);
+  overflow: hidden; display: flex; align-items: center; justify-content: center;
+  box-shadow: inset 0 0 40px rgba(0,0,0,0.3);
+}
+.assessment__camera-placeholder,
+.assessment__camera-error {
+  display: flex; flex-direction: column; align-items: center;
+  gap: 16px; color: rgba(255,255,255,0.6); text-align: center;
+  padding: 24px; font-size: 0.875rem;
+}
+.assessment__camera-error { color: #FFB3A7; }
+.assessment__preview { width: 100%; height: 100%; object-fit: cover; display: block; }
+.assessment__camera-ok {
+  display: flex; align-items: center; gap: 6px;
+  color: var(--color-success); font-size: 0.875rem; font-weight: 600;
+}
+
+/* Ready state */
+.assessment__panel--center { align-items: center; text-align: center; }
+.assessment__ready-icon {
+  width: 80px; height: 80px; background: rgba(74,25,66,0.08); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; color: var(--color-primary);
+}
+
+/* Bottom nav */
+.assessment__nav {
+  display: flex; gap: 12px; justify-content: flex-end;
+  margin-top: 16px; padding-top: 24px; border-top: 1px solid var(--color-border-light);
+}
+.assessment__nav--center { justify-content: center; }
+.assessment__next { display: inline-flex; align-items: center; gap: 6px; }
+
+@media (max-width: 640px) {
+  .assessment { padding: 24px 16px 48px; }
+  .assessment__body { padding: 24px 20px; }
+  .assessment__steps { gap: 12px; font-size: 0.8rem; }
+}

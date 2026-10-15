@@ -1,0 +1,62 @@
+# ── Python ──
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+pip-wheel-metadata/
+
+# ── Environment & secrets ──
+.env
+backend/.env
+*.env.local
+*.env.*.local
+
+# ── Database files ──
+*.db
+*.sqlite
+*.sqlite3
+backend/nms_dev.db
+
+# ── MediaPipe model files (large binaries, download on setup) ──
+backend/models/
+
+# ── Node / Frontend ──
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/coverage/
+
+# ── IDE / OS ──
+.vscode/settings.json
+.vscode/launch.json
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Logs ──
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# ── Alembic ──
+# keep versions tracked, only ignore local overrides
+backend/alembic.ini.local
+
+# ── Misc ──
+*.bak
+*.tmp

@@ -1,0 +1,81 @@
+/* ============================================================
+   Design tokens — warm/earthy clinical palette
+   ============================================================ */
+:root {
+  /* Primary tones */
+  --color-primary:        #4A1942;   /* deep aubergine / muted plum */
+  --color-primary-light:  #6B2C62;
+  --color-primary-dark:   #2F0F2A;
+
+  /* Backgrounds */
+  --color-bg:             #FAF7F4;   /* warm ivory / bone */
+  --color-bg-secondary:   #F2EDE7;
+  --color-surface:        #FFFFFF;
+  --color-surface-alt:    #F5F0EC;
+
+  /* Accents */
+  --color-accent:         #C07340;   /* muted terracotta / copper */
+  --color-accent-light:   #D8946A;
+  --color-accent-dark:    #8E5428;
+
+  --color-sage:           #7A9E8A;   /* soft sage secondary */
+  --color-sage-light:     #A8C4B4;
+
+  /* Text */
+  --color-text:           #2C2520;   /* charcoal */
+  --color-text-secondary: #5A4E48;
+  --color-text-muted:     #8A7D76;
+
+  /* Borders */
+  --color-border:         #E0D5CC;
+  --color-border-light:   #EDE5DE;
+
+  /* Status */
+  --color-success:        #3D7A5B;
+  --color-success-bg:     #EBF5EF;
+  --color-warning:        #B5831A;
+  --color-warning-bg:     #FDF3DC;
+  --color-error:          #B03A2E;
+  --color-error-bg:       #FDECEA;
+  --color-info:           #2366A8;
+  --color-info-bg:        #EBF3FB;
+
+  /* Shadows */
+  --shadow-sm:  0 1px 3px rgba(74, 25, 66, 0.06), 0 1px 2px rgba(74, 25, 66, 0.04);
+  --shadow-md:  0 4px 12px rgba(74, 25, 66, 0.08), 0 2px 4px rgba(74, 25, 66, 0.05);
+  --shadow-lg:  0 8px 24px rgba(74, 25, 66, 0.10), 0 4px 8px rgba(74, 25, 66, 0.06);
+
+  /* Radii */
+  --radius-sm:  6px;
+  --radius-md:  10px;
+  --radius-lg:  16px;
+  --radius-xl:  24px;
+
+  /* Spacing */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-7:  28px;
+  --space-8:  32px;
+  --space-9:  36px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  /* Typography */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+
+  --text-xs:   0.75rem;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-lg:   1.125rem;
+  --text-xl:   1.25rem;
+  --text-2xl:  1.5rem;
+  --text-3xl:  1.875rem;
+  --text-4xl:  2.25rem;
+  --text-5xl:  3rem;
+}

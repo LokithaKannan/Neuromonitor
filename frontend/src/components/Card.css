@@ -1,0 +1,11 @@
+/* ================================================================
+   Card component
+   ================================================================ */
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+.card--padded { padding: 24px; }

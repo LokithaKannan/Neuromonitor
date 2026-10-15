@@ -1,0 +1,15 @@
+/* ================================================================
+   App Layout shell
+   ================================================================ */
+
+.app-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-bg);
+}
+
+.app-layout__main {
+  flex: 1;
+  width: 100%;
+}
